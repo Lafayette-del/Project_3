@@ -6,6 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function TodoList({todos}) {
+  let handleDelete = (event, pindex, todo.todo_date) => {
+    console.log ("DELETE")
+    console.log (event)
+    console.log (pindex)
+    console.log (todo.todo_date)
+
+    let newProductlist = products.filter((product,index)=>index!==)
+  }
+
   return (
     <>
       <Button variant="info">Alltodo</Button>&nbsp;
@@ -33,7 +42,7 @@ export default function TodoList({todos}) {
                 <td>{todo.todo_date}</td>
                 <td>{todo.todo_text}</td>
                 <td>{todo.isCompleted}</td>
-                <td><Button variant="warning">Delete</Button></td>
+                <td><Button variant="warning" onClick={(event)=>handleDelete(event, index, todo.todo_date)}>Delete</Button></td>
                 <td><Button variant="warning">Update</Button></td>
               </tr>
           ))}

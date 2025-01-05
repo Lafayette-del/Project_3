@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function TodoList({todos, setTodos}) {
   let newTodoList = todos.filter((todo,index)=>index!==pindex)
   setTodos (newTodoList)
-  }
 
   return (
     <>
@@ -45,4 +44,4 @@ export default function TodoList({todos, setTodos}) {
       </Table>
     </>
   )
-  
+  }
